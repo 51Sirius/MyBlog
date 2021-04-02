@@ -1,11 +1,11 @@
-from flask import Flask
+from flask import Flask, render_template, request, redirect, url_for, abort
 
 app = Flask(__name__)
 
 
 @app.route('/')
-def hello_world():
-    return 'Hello World!'
+def homepage():
+    return render_template('index.html', title='Blog')
 
 
 if __name__ == '__main__':
