@@ -4,7 +4,6 @@ header {
     left: 0;
     width: 100%;
     padding-left: 10px;
-    background-color: #212121;
     display: flex;
     min-height: auto;
 }
@@ -14,4 +13,30 @@ h1 {
     font-size: xxx-large;
     color: #14ffec;
     text-shadow: #0d7377 1px 1px 1px;
+}
+
+.chose {
+    display: block;
+    text-align: center;
+    padding: 5px;
+    margin: 0 10px 0 10px;
+    color: #14ffec;
+    font-size: xx-large;
+}
+
+.btn-grad {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    border-radius: 10px;
+    display: block;
+}
+
+.btn-grad:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
 }
