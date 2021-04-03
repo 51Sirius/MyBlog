@@ -4,9 +4,16 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    overflow: hidden;
 }
 
 .name {
     font-size: xxx-large;
     font-family: "Bookman Old Style", sans-serif;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-grow: 0.9;
 }
