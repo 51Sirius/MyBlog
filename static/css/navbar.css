@@ -1,5 +1,4 @@
 header {
-    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -35,7 +34,7 @@ h1 {
     from {
         transform: rotateX(0) rotateY(0);
     }
-    50%{
+    50% {
         transform: rotateX(20grad) rotateY(30grad);
     }
     to {
