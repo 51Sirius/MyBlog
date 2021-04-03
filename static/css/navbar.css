@@ -8,3 +8,10 @@ header {
     display: flex;
     min-height: auto;
 }
+
+h1 {
+    margin: 16px 16px 16px 20px;
+    font-size: xxx-large;
+    color: #14ffec;
+    text-shadow: #0d7377 1px 1px 1px;
+}
