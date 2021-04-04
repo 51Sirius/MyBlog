@@ -8,13 +8,13 @@ header {
 }
 
 h1 {
+    flex-grow: 1;
     margin: 16px 16px 16px 20px;
     font-size: xxx-large;
     text-shadow: #0d7377 1px 1px 1px;
 }
 
 .btn-grad {
-    margin-right: auto;
     font-size: x-large;
     padding: 15px 45px;
     text-align: center;
