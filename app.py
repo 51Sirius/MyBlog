@@ -8,5 +8,10 @@ def homepage():
     return render_template('index.html', title='Blog')
 
 
+@app.route('/favorites')
+def favorites():
+    return render_template('favorites.html', title='Favorites')
+
+
 if __name__ == '__main__':
     app.run()

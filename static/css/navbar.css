@@ -18,13 +18,14 @@ header a {
 }
 
 .btn-grad {
+    margin-right: 10%;
+    flex-grow: initial;
+    text-decoration: none;
     font-size: x-large;
-    padding: 15px 45px;
+    padding: 15px 10px;
     text-align: center;
     text-transform: uppercase;
     transition: 0.5s;
-    background-size: 200% auto;
-    border-radius: 10px;
     display: block;
 }
 

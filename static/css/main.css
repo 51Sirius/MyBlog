@@ -8,6 +8,7 @@ body {
 }
 
 .name {
+    margin-left: 4%;
     font-size: xxx-large;
     font-family: "Bookman Old Style", sans-serif;
 }
