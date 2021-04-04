@@ -1,4 +1,5 @@
 header {
+    color: #ffffff;
     top: 0;
     left: 0;
     width: 100%;
@@ -7,7 +8,9 @@ header {
     min-height: auto;
 }
 
-h1 {
+header a {
+    color: #ffffff !important;
+    text-decoration: none;
     flex-grow: 1;
     margin: 16px 16px 16px 20px;
     font-size: xxx-large;
