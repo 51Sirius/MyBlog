@@ -1,0 +1,18 @@
+body {
+    overflow-y: auto;
+}
+
+.block-favor{
+    display: block;
+    color: white;
+    font-size: xx-large;
+    align-content: center;
+    background-size: cover;
+    border: solid 3px #00054c;
+    border-radius: 10px;
+    padding: 4%;
+}
+
+.favor {
+    display: flex;
+}
