@@ -12,6 +12,8 @@ body {
 }
 
 .card {
+    min-width: border-box;
+    max-width: 30vw;
     perspective: 1000px;
     transform-style: preserve-3d;
 }
