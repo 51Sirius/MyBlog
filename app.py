@@ -23,5 +23,10 @@ def film_page():
     return render_template('film.html', title='BestFilm')
 
 
+@app.route('/manga')
+def manga_page():
+    return render_template('manga.html', title='BestManga')
+
+
 if __name__ == '__main__':
     app.run()
