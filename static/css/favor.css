@@ -22,11 +22,12 @@ body {
     text-align: center;
     border-radius: 10px;
     border: solid 3px #071349;
-    background: rgba(0, 0, 0, 0.2);
-    background-blend-mode: color;
+    background: rgba(0, 0, 0, 0.3);
+    background-blend-mode: color !important;
     color: #6cffdf;
     font-size: xx-large;
     transition: transform 0.2s;
     background-size: cover;
     padding: 10vh;
 }
+
