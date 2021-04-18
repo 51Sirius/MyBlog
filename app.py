@@ -18,5 +18,10 @@ def anime_page():
     return render_template('anime.html', title='BestAnime')
 
 
+@app.route('/film')
+def film_page():
+    return render_template('film.html', title='BestFilm')
+
+
 if __name__ == '__main__':
     app.run()
