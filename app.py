@@ -28,5 +28,10 @@ def manga_page():
     return render_template('manga.html', title='BestManga')
 
 
+@app.route('/ranobe')
+def ranobe_page():
+    return render_template('ranobe.html', title='BestRanobe')
+
+
 if __name__ == '__main__':
     app.run()
