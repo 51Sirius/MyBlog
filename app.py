@@ -15,7 +15,7 @@ def favorites():
 
 @app.route('/anime')
 def anime_page():
-    return render_template('')
+    return render_template('anime.html', title='BestAnime')
 
 
 if __name__ == '__main__':
