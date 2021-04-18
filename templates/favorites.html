@@ -5,23 +5,28 @@
 {% block content %}
     <div class="favor">
         <div class="card">
-            <div class="card-item" style="background-image: url( {{ url_for('static', filename='images/Darling-in-the-FranXX-Code-002-1813589.jpg') }} )">
+            <a class="card-item" href="{{ url_for('anime_page') }}"
+                 style="background-image: url( {{ url_for('static', filename='images/Darling-in-the-FranXX-Code-002-1813589.jpg') }} )">
                 Аниме
-            </div>
+            </a>
         </div>
         <div class="card">
-            <div class="card-item" style="background-image: url( {{ url_for('static', filename='images/Djg5BofXgAEA4xn.jpg') }} )">
+            <a class="card-item"
+                 style="background-image: url( {{ url_for('static', filename='images/Djg5BofXgAEA4xn.jpg') }} )">
                 Фильмы
-            </div>
-        </div>
-                <div class="card">
-            <div class="card-item" style="background-image: url( {{ url_for('static', filename='images/fe38078fa470218ab31cac2924dec7e0.jpg') }} )">
-                Сериалы
-            </div>
+            </a>
         </div>
         <div class="card">
-            <div class="card-item" style="background-image: url( {{ url_for('static', filename='images/33d7a28cca50eac631deac6e4023a8c2.jpg') }} )">
+            <a class="card-item"
+                 style="background-image: url( {{ url_for('static', filename='images/fe38078fa470218ab31cac2924dec7e0.jpg') }} )">
+                Сериалы
+            </a>
+        </div>
+        <div class="card">
+            <a class="card-item"
+                 style="background-image: url( {{ url_for('static', filename='images/33d7a28cca50eac631deac6e4023a8c2.jpg') }} )">
                 Манга
-            </div>
+            </a>
+        </div>
     </div>
 {% endblock %}

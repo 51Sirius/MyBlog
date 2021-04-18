@@ -13,5 +13,10 @@ def favorites():
     return render_template('favorites.html', title='Favorites')
 
 
+@app.route('/anime')
+def anime_page():
+    return render_template('')
+
+
 if __name__ == '__main__':
     app.run()
