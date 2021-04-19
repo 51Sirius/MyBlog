@@ -1,0 +1,5 @@
+.card-item {
+    min-width: 40vw;
+    min-height: 40vh;
+    content: "";
+}
