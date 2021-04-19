@@ -33,5 +33,10 @@ def ranobe_page():
     return render_template('ranobe.html', title='BestRanobe')
 
 
+@app.route('/serial')
+def serial_page():
+    return render_template('serial.html', title='BestSerial')
+
+
 if __name__ == '__main__':
     app.run()
