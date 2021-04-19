@@ -38,5 +38,10 @@ def serial_page():
     return render_template('serial.html', title='BestSerial')
 
 
+@app.route('/contacts')
+def contact():
+    return render_template('contacts.html', title='Contact')
+
+
 if __name__ == '__main__':
     app.run()
