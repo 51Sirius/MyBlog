@@ -46,3 +46,9 @@ header a {
     }
 
 }
+
+@media screen and (max-width: 450px){
+    header {
+        flex-direction: column;
+    }
+}

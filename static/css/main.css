@@ -6,6 +6,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     overflow: hidden;
+    background-size: cover;
 }
 
 .name {
@@ -18,4 +19,11 @@ main {
     display: flex;
     align-items: center;
     flex-grow: 0.9;
+}
+
+
+@media screen and (max-width: 600px){
+    .name{
+        margin: auto;
+    }
 }

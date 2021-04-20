@@ -12,7 +12,6 @@ body {
 }
 
 .card {
-    min-width: border-box;
     max-width: 30vw;
     perspective: 1000px;
     transform-style: preserve-3d;
@@ -33,3 +32,15 @@ body {
     padding: 10vh;
 }
 
+@media screen and (max-width: 700px){
+    .card-item {
+        font-size: x-large;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .favor {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+}
