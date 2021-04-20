@@ -51,4 +51,7 @@ header a {
     header {
         flex-direction: column;
     }
+    .logo {
+        text-align: center;
+    }
 }
