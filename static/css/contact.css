@@ -1,5 +1,13 @@
 .card-item {
-    min-width: 40vw;
-    min-height: 40vh;
-    content: "";
+    display: block;
+    background-size: cover;
+}
+
+.card-item>img {
+    max-width: 40vw;
+    max-height: 40vh;
+}
+
+.card {
+    margin: auto;
 }
