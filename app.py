@@ -43,5 +43,10 @@ def contact():
     return render_template('contacts.html', title='Contact')
 
 
+@app.route('/projects')
+def projects():
+    return render_template('projects.html', title='Projects')
+
+
 if __name__ == '__main__':
     app.run()
