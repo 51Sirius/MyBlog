@@ -9,5 +9,5 @@ function create_bg(event, image) {
 }
 
 function delete_bg(event) {
-    document.body.style.backgroundImage = 'linear-gradient( 109.6deg,  rgba(14,11,56,1) 11.2%, rgb(2, 81, 109) 91.1% )'
+    document.body.style.backgroundImage = 'linear-gradient(rgba(0, 0, 0, 0.5), rgb(0, 0, 0)) 0 0 / cover no-repeat fixed, url("https://source.unsplash.com/tHtZo3FLhPc/1920x1080") center center'
 }
