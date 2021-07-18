@@ -1,52 +1,24 @@
 from flask import Flask, render_template, request, redirect, url_for, abort
 from os import environ
+import locale
+from models import Users, db
+from flask_login import LoginManager, login_user, logout_user, current_user, login_required
+import cfg
+from flask_migrate import Migrate
 
 app = Flask(__name__)
+locale.setlocale(locale.LC_ALL, '')
+app.config['SECRET_KEY'] = cfg.S_KEY
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+db.init_app(app)
+login = LoginManager(app)
+migrate = Migrate(app, db)
 
 
 @app.route('/')
 def homepage():
     return render_template('index.html', title='Blog')
-
-
-@app.route('/favorites')
-def favorites():
-    return render_template('favorites.html', title='Favorites')
-
-
-@app.route('/anime')
-def anime_page():
-    return render_template('anime.html', title='BestAnime')
-
-
-@app.route('/film')
-def film_page():
-    return render_template('film.html', title='BestFilm')
-
-
-@app.route('/manga')
-def manga_page():
-    return render_template('manga.html', title='BestManga')
-
-
-@app.route('/ranobe')
-def ranobe_page():
-    return render_template('ranobe.html', title='BestRanobe')
-
-
-@app.route('/serial')
-def serial_page():
-    return render_template('serial.html', title='BestSerial')
-
-
-@app.route('/contacts')
-def contact():
-    return render_template('contacts.html', title='Contact')
-
-
-@app.route('/projects')
-def projects():
-    return render_template('projects.html', title='Projects')
 
 
 if __name__ == '__main__':
