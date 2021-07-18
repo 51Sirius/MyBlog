@@ -1,0 +1,50 @@
+.page-registration {
+    color: #F64C72;
+    background: #242582;
+    padding: 10vw 10vh 10vw 10vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    border-radius: 80px;
+}
+
+main {
+    display: flex;
+    flex-direction: initial;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    background: none;
+}
+
+p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 420px) {
+    .page-registration {
+        width: 100%;
+        min-height: 60vh;
+        padding: 4vw 4vh 4vw 4vh;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    h1 {
+        font-size: x-large;
+    }
+    input {
+        font-size: x-small;
+    }
+}
+
+@media screen and (max-width: 250px) {
+    .page-registration {
+        width: 100%;
+        min-height: 60vh;
+        padding: 1vw 1vh 1vw 1vh;
+}}

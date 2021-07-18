@@ -1,0 +1,10 @@
+{% extends 'base.html' %}`
+{% block content %}
+    <div class="button-block">
+    {% if current_user.is_anonymous %}
+        <a class="button-play button" href=' {{ url_for("registration") }} '>Играть</a>
+    {% else %}
+        <a class="button-play button" href=' {{ url_for("play_menu") }} '>Играть</a>
+    {% endif %}
+    </div>
+{% endblock %}

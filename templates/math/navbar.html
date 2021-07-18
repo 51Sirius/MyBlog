@@ -1,0 +1,17 @@
+<a class="logo" href="{{ url_for('main_page') }}">MathTR</a>
+<a href="{{ url_for('rating') }}" class="button small">Рейтинг</a>
+{% if current_user.is_anonymous %}
+    <div class="button-group">
+        <a href="{{ url_for('login') }}" class="button small">Войти</a>
+        <a href="{{ url_for('registration') }}" class="button small">Регистрироваться</a>
+    </div>
+{% else %}
+    <div class="block-nick"><a href="/user/{{ current_user.username }}" class="nickname">{{ current_user.username }}</a>
+        <ul class="submenu">
+            <li><a href="/user/{{ current_user.username }}" class="block-list">Профиль</a></li>
+            <li><a href="{{ url_for('settings') }}" class="block-list">Настройки</a></li>
+            <li><a href="{{ url_for('static', filename='math_setup.exe') }}" download class="block-list">Скачать</a></li>
+            <li><a href="{{ url_for('logout') }}" class="block-list">Выход</a></li>
+        </ul>
+    </div>
+{% endif %}

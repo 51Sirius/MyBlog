@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background: #171717;
+    margin: 0;
+    overflow: hidden;
+}
+
+.snake, .apple, .second-snake {
+    position: absolute;
+    background: #DA0037;
+}
+
+.snake, .second-snake {
+    border: solid #444444 1px;
+}
+
+.score {
+    width: 96vw;
+    text-align: right;
+    color: #DA0037;
+    margin-top: 20px;
+    margin-right: 10px;
+    position: absolute;
+    font-size: xx-large;
+    font-family: "Bookman Old Style", sans-serif;
+}
+
+.game-over {
+    text-decoration: none;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+}
+
+.game-over-font {
+    margin: 0;
+    font-size: 20vw;
+    color: #DA0037;
+}

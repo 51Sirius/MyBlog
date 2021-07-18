@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block custom %}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/users.css') }}"/>
+{% endblock %}
+{% block content %}
+    <div class="page-registration">
+        <div class="header-page">
+            <div class="rank_img">
+                <img src="{{ url_for('static', filename='images/'+rank) }}" alt="ваш ранг">
+            </div>
+            <div class="nickname">{{ user.username }}</div>
+        </div>
+        <div class="main-page">
+            <h1>Статистика</h1>
+            <ul>
+                <li>Ваш ранг: {{ rank_name }}</li>
+                <li>Количество очков: {{ user.score }}</li>
+            </ul>
+
+        </div>
+        <div class="footer-page">
+            {% if current_user.id == user.id %}
+            <a href="{{ url_for('logout') }}" class="button">Выйти</a>
+            <a href="{{ url_for('settings') }}" class="button">Настройки</a>
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}

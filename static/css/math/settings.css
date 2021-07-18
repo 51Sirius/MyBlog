@@ -1,0 +1,73 @@
+.page-registration {
+    align-items: center;
+    color: #F64C72;
+    background: #242582;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    border-radius: 80px;
+}
+
+main {
+    display: flex;
+    flex-direction: initial;
+    align-items: center;
+    justify-content: center;
+}
+
+.block-form {
+    align-items: center;
+    display: flex;
+    font-size: 3vh;
+}
+
+.answer-form {
+    font-family: Cambria, sans-serif;
+    color: white;
+    font-size: 3vh;
+    border: #F64C72 6px solid;
+    background: none;
+}
+
+p {
+    margin-right: 10px;
+}
+
+.answer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    background: none;
+}
+
+@media screen and (max-width: 890px) {
+    .block-form {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .page-registration {
+        min-height: 80vh;
+        width: 100%;
+    }
+
+    .submit-button {
+        min-width: 40vw;
+    }
+
+}
+
+@media screen and (max-width: 530px) {
+    .block-form {
+
+    }
+
+    .answer-form {
+        font-size: 6vw;
+    }
+}

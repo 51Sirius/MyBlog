@@ -1,0 +1,86 @@
+.stat-bar {
+    font-size: xx-large;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 0 0 auto;
+    color: aliceblue;
+    display: flex;
+}
+
+.game {
+    min-font-size: 10vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.quest {
+    text-align: center;
+    font-size: 10vh;
+    color: aliceblue;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.level {
+    margin-left: 10px;
+}
+
+.point {
+    margin-right:  10px;
+}
+
+.play-button {
+    margin: 20px 0 0 0;
+    width: 100%;
+    background: none;
+}
+
+.answer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.answer-form {
+    font-family: Cambria, sans-serif;
+    color: white;
+    font-size: 4vh;
+    border: #F64C72 6px solid;
+    background: none;
+    width: 100%;
+    max-width: 40vw;
+}
+
+.block-answer {
+    width: auto;
+}
+
+.play-button {
+    max-width: 30vw;
+}
+
+@media screen and (max-width: 1000px) {
+    .quest {
+        font-size: xxx-large;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .stat-bar{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .quest {
+        font-size: xx-large;
+    }
+    .play-button {
+        max-width: 50vw;
+    }
+}

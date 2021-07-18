@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block custom %}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/settings.css') }}"/>
+{% endblock %}
+{% block content %}
+    <div class="page-registration">
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                    <div class="error">{{ message }}</div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        <form action="{{ url_for('settings') }}" method="post" novalidate class="answer">
+            {{ form.csrf_token }}
+            <div class="block-form">
+                <p>{{ form.username.label }}</p>
+                <p>{{ form.username(class_="answer-form") }}</p>
+            </div>
+            {% for error in form.username.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+            <div class="block-form">
+                <p>{{ form.clas.label }}</p>
+                <p>{{ form.clas(class_="answer-form") }}</p>
+            </div>
+            {% for error in form.clas.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+            <div class="block-form">
+                <p>{{ form.level.label }}</p>
+                <p>{{ form.level(class_="answer-form") }}</p>
+            </div>
+            {% for error in form.level.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+            <button type="submit" class="button submit-button">Изменить</button>
+        </form>
+    </div>
+{% endblock %}
