@@ -11,6 +11,7 @@
             <li><a href="game/math/user/{{ current_user.username }}" class="block-list">Профиль</a></li>
             <li><a href="{{ url_for('settings') }}" class="block-list">Настройки</a></li>
             <li><a href="{{ url_for('static', filename='math_setup.exe') }}" download class="block-list">Скачать</a></li>
+            <li><a href="{{ url_for('homepage') }}" class="block-list">Блог</a></li>
             <li><a href="{{ url_for('logout') }}" class="block-list">Выход</a></li>
         </ul>
     </div>
