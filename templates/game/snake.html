@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/snake.css') }}"/>
     <title>Snake</title>
 </head>
 <body>
     <div class="score">Score: 0</div>
-    <script src="main.js"></script>
+    <script src="{{ url_for('static', filename='javascript/snake.js') }}"></script>
 </body>
 </html>

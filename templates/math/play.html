@@ -1,6 +1,6 @@
-{% extends 'base.html' %}
+{% extends 'math/base.html' %}
 {% block custom %}
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/game.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/math/game.css') }}"/>
 {% endblock %}
 {% block content %}
     <div class="stat-bar">
@@ -26,5 +26,5 @@
     </div>
 {% endblock %}
 {% block scripts %}
-    <script src="{{ url_for('static', filename='scripts/game.js') }}"></script>
+    <script src="{{ url_for('static', filename='javascript/math.js') }}"></script>
 {% endblock %}

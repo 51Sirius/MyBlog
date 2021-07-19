@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/navbar.css') }}"/>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/math/navbar.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/math/main.css') }}"/>
     {% block custom %}
     {% endblock %}
     <meta charset="UTF-8">
@@ -12,14 +12,14 @@
 <body>
 <div class="page">
     <header>
-        {% include 'navbar.html' %}
+        {% include 'math/navbar.html' %}
     </header>
     <main>
         {% block content %}
         {% endblock %}
     </main>
 </div>
-<script src="{{ url_for('static', filename='scripts/buttons.js') }}"></script>
+<script src="{{ url_for('static', filename='javascript/buttons.js') }}"></script>
 {% block scripts %}
 {% endblock %}
 </body>

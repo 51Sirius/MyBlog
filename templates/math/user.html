@@ -1,12 +1,12 @@
-{% extends 'base.html' %}
+{% extends 'math/base.html' %}
 {% block custom %}
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/users.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/math/users.css') }}"/>
 {% endblock %}
 {% block content %}
     <div class="page-registration">
         <div class="header-page">
             <div class="rank_img">
-                <img src="{{ url_for('static', filename='images/'+rank) }}" alt="ваш ранг">
+                <img src="{{ url_for('static', filename='images/math/'+rank) }}" alt="ваш ранг">
             </div>
             <div class="nickname">{{ user.username }}</div>
         </div>
