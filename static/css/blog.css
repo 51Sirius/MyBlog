@@ -78,6 +78,7 @@ header {
     border-radius: 20px;
     border: 1px solid #FAFAFA;
     text-decoration: none;
+    transition: all 700ms ease-in;
 }
 
 .avatar{
