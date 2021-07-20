@@ -38,6 +38,11 @@ def logout():
     return redirect(url_for('homepage'))
 
 
+@app.route('/contacts')
+def contacts():
+    return render_template('contacts.html')
+
+
 @app.route('/game/login', methods=['GET', 'POST'])
 def login():
     if current_user.is_authenticated:

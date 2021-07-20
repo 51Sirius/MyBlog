@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<a href="{{ url_for("main_math") }}">MAth</a>
-<a href="{{ url_for("snake") }}">Snake</a>
-</body>
-</html>
+{% extends "base.html" %}
+{% block content %}
+        <div class="profile-info">
+
+            <div class="name">Danil Sirius</div>
+            <div class="info">Hello! Im Danil. Im full-stack developer on python.</div>
+        </div>
+{% endblock %}

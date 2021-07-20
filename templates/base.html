@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/blog.css') }}"/>
+    <title>{{ title }}</title>
+    {% block custom %}
+    {% endblock %}
+</head>
+<body>
+<header class="black">
+    <a href="{{ url_for("contacts") }}" class="black url">Contacts</a>
+    <a href="{{ url_for("contacts") }}" class="black url">Favorites</a>
+    <a href="{{ url_for("contacts") }}" class="black url">Projects</a>
+</header>
+<main class="black">
+    {% block content %}
+
+    {% endblock %}
+</main>
+<script rel="script" src="{{ url_for('static', filename='javascript/hrefs.js') }}"></script>
+</body>
+</html>
