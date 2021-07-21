@@ -82,7 +82,7 @@ header {
     transition: all 700ms ease-in;
 }
 
-.avatar{
+.avatar {
     max-height: 100%;
     max-width: 12%;
     border-radius: 20px;
@@ -91,4 +91,24 @@ header {
 .text {
     width: 100%;
     text-align: center;
+}
+
+.card-favor {
+    background-size: cover;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.3);
+    background-blend-mode: color !important;
+    margin-top: 10px;
+    font-size: xx-large;
+    font-family: 'Consolas', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+    width: 60%;
+    display: block;
+    border-radius: 20px;
+    border: 1px solid #FAFAFA;
+    text-decoration: none;
+    transition: all 700ms ease-in;
+}
+
+.favor {
+    padding: 40px;
 }

@@ -43,6 +43,11 @@ def contacts():
     return render_template('contacts.html')
 
 
+@app.route('/favorites')
+def favorites():
+    return render_template('favorites.html')
+
+
 @app.route('/game/login', methods=['GET', 'POST'])
 def login():
     if current_user.is_authenticated:
