@@ -1,19 +1,19 @@
 {% extends "base.html" %}
 {% block content %}
     <div class="block-info">
-        <a class="card black favor" href="#">
+        <a class="card black favor" href="{{ url_for('anime') }}">
             Anime
         </a>
-        <a class="card black favor" href="#">
+        <a class="card black favor" href="{{ url_for('manga') }}">
             Manga
         </a>
-        <a class="card black favor" href="#">
+        <a class="card black favor" href="{{ url_for('ranobe') }}">
             Ranobe
         </a>
-        <a class="card black favor" href="#">
+        <a class="card black favor" href="{{ url_for('serial') }}">
             Serial
         </a>
-        <a class="card black favor" href="#">
+        <a class="card black favor" href="{{ url_for('film') }}">
             Film
         </a>
         <a class="card black favor" href="#">

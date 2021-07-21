@@ -48,6 +48,31 @@ def favorites():
     return render_template('favorites.html')
 
 
+@app.route('/favorites/anime')
+def anime():
+    return render_template('animelist.html', title='Anime')
+
+
+@app.route('/favorites/manga')
+def manga():
+    return render_template('mangalist.html', title='Manga')
+
+
+@app.route('/favorites/ranobe')
+def ranobe():
+    return render_template('ranobelist.html', title='Manga')
+
+
+@app.route('/favorites/serial')
+def serial():
+    return render_template('seriallist.html', title='Manga')
+
+
+@app.route('/favorites/film')
+def film():
+    return render_template('filmlist.html', title='Manga')
+
+
 @app.route('/game/login', methods=['GET', 'POST'])
 def login():
     if current_user.is_authenticated:
