@@ -40,12 +40,12 @@ def logout():
 
 @app.route('/contacts')
 def contacts():
-    return render_template('contacts.html')
+    return render_template('contacts.html', title="Contacts")
 
 
 @app.route('/favorites')
 def favorites():
-    return render_template('favorites.html')
+    return render_template('favorites.html', title="Favorites")
 
 
 @app.route('/favorites/anime')
@@ -60,17 +60,17 @@ def manga():
 
 @app.route('/favorites/ranobe')
 def ranobe():
-    return render_template('ranobelist.html', title='Manga')
+    return render_template('ranobelist.html', title='Ranobe')
 
 
 @app.route('/favorites/serial')
 def serial():
-    return render_template('seriallist.html', title='Manga')
+    return render_template('seriallist.html', title='Serial')
 
 
 @app.route('/favorites/film')
 def film():
-    return render_template('filmlist.html', title='Manga')
+    return render_template('filmlist.html', title='Films')
 
 
 @app.route('/game/login', methods=['GET', 'POST'])
