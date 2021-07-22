@@ -1,5 +1,8 @@
 {% extends "base.html" %}
 
+{% block custom %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/blog.css') }}">
+{% endblock %}
 {% block content %}
     <div class="block-info">
         <a class="card black" href="https://www.kinopoisk.ru/film/258687/">
