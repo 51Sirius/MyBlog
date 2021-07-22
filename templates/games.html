@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <a href="{{ url_for("login") }}" class="black url">Login</a>
+    <a href="{{ url_for("registration") }}" class="black url">Reg</a>
+    <a href="{{ url_for("logout") }}" class="black url">Logout</a>
+{% endblock %}

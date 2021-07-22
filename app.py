@@ -32,6 +32,11 @@ def homepage():
     return render_template('index.html', title='Blog')
 
 
+@app.route('/game')
+def game():
+    return render_template('games.html')
+
+
 @app.route('/logout')
 def logout():
     logout_user()
@@ -76,7 +81,7 @@ def film():
 @app.route('/game/login', methods=['GET', 'POST'])
 def login():
     if current_user.is_authenticated:
-        return redirect(url_for('index'))
+        return redirect(url_for('game'))
     forms = LoginForm()
     if forms.validate_on_submit():
         nick = forms.username.data
@@ -86,7 +91,7 @@ def login():
             abort(403)
         login_user(user, remember=forms.remember_me)
         return redirect(url_for('main_math'))
-    return render_template('math/login.html', title="Login", form=forms)
+    return render_template('login.html', title="Login", form=forms)
 
 
 @app.route('/game/registration', methods=['GET', 'POST'])
@@ -104,7 +109,7 @@ def registration():
         db.session.add(user)
         db.session.commit()
         return redirect(url_for('main_math'))
-    return render_template('math/registration.html', title="Registration", form=register_form)
+    return render_template('registration.html', title="Registration", form=register_form)
 
 
 @app.route('/game/math')

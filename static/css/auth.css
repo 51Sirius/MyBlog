@@ -1,7 +1,19 @@
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+body {
+    overflow: hidden;
+}
+
+
 .page-registration {
-    color: #F64C72;
-    background: #242582;
-    padding: 10vw 10vh 10vw 10vh;
+    border: #FAFAFA 2px solid;
+    mso-border-shadow: yes;
+    color: #FAFAFA;
+    padding: 8vw 8vh 8vw 8vh;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -17,6 +29,13 @@ main {
 }
 
 button {
+    width: 10vw;
+    transition: transform .3s;
+    text-decoration: none;
+    display: block;
+    border: #FAFAFA 6px solid;
+    border-radius: 12vh;
+    color: white;
     background: none;
 }
 
@@ -37,6 +56,7 @@ p {
     h1 {
         font-size: x-large;
     }
+
     input {
         font-size: x-small;
     }
@@ -47,4 +67,5 @@ p {
         width: 100%;
         min-height: 60vh;
         padding: 1vw 1vh 1vw 1vh;
-}}
+    }
+}
